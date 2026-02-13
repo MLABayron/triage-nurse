@@ -1,17 +1,11 @@
-﻿Public Class triage
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+﻿Public Class form_triage
+    Private Sub form_triage_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-    End Sub
+        Me.MinimumSize = New System.Drawing.Size(Me.Width, Me.Height)
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+        Me.MaximumSize = New System.Drawing.Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height)
 
-    End Sub
-
-    Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
-
-    End Sub
-
-    Private Sub TextBox14_TextChanged(sender As Object, e As EventArgs) Handles TextBox14.TextChanged
-
+        Me.AutoSize = True
+        Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
     End Sub
 End Class

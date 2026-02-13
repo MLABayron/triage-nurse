@@ -1,0 +1,15 @@
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.vbproj.AssemblyReference.cache
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.Patient_ui.resources
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.Resources.resources
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.queue.resources
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.vbproj.GenerateResource.cache
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.vbproj.CoreCompileInputs.cache
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.form_triage.resources
+C:\Users\maria\triage\Lifeline\bin\Debug\Lifeline.exe.config
+C:\Users\maria\triage\Lifeline\bin\Debug\Lifeline.exe
+C:\Users\maria\triage\Lifeline\bin\Debug\Lifeline.pdb
+C:\Users\maria\triage\Lifeline\bin\Debug\Lifeline.xml
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.exe
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.xml
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.pdb
+C:\Users\maria\triage\Lifeline\obj\Debug\Lifeline.exe.config

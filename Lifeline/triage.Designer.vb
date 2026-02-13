@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class triage
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class form_triage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,11 @@ Partial Class triage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(triage))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_triage))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
@@ -32,10 +32,10 @@ Partial Class triage
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.triage_patientdgv = New System.Windows.Forms.DataGridView()
         Me.No = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PatientName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Severity = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.patient_panel = New System.Windows.Forms.Panel()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
@@ -95,7 +95,7 @@ Partial Class triage
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.triage_patientdgv, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
+        Me.patient_panel.SuspendLayout()
         Me.TabControl2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -109,13 +109,13 @@ Partial Class triage
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label35)
         Me.Panel1.Controls.Add(Me.Label34)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Controls.Add(Me.patient_panel)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -125,6 +125,7 @@ Partial Class triage
         '
         'Label35
         '
+        Me.Label35.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label35.Font = New System.Drawing.Font("Segoe UI", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.Color.Red
         Me.Label35.Location = New System.Drawing.Point(1775, 53)
@@ -136,6 +137,7 @@ Partial Class triage
         '
         'Label34
         '
+        Me.Label34.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.ForeColor = System.Drawing.Color.Red
@@ -156,6 +158,8 @@ Partial Class triage
         '
         'Panel3
         '
+        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel3.Controls.Add(Me.triage_patientdgv)
         Me.Panel3.Location = New System.Drawing.Point(12, 216)
         Me.Panel3.Name = "Panel3"
@@ -173,6 +177,8 @@ Partial Class triage
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CornflowerBlue
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White
         Me.triage_patientdgv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.triage_patientdgv.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.triage_patientdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.triage_patientdgv.BackgroundColor = System.Drawing.Color.White
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -184,8 +190,7 @@ Partial Class triage
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.triage_patientdgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.triage_patientdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.triage_patientdgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No, Me.Name, Me.Severity})
-        Me.triage_patientdgv.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.triage_patientdgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.No, Me.PatientName, Me.Severity})
         Me.triage_patientdgv.EnableHeadersVisualStyles = False
         Me.triage_patientdgv.GridColor = System.Drawing.Color.White
         Me.triage_patientdgv.Location = New System.Drawing.Point(0, 0)
@@ -203,12 +208,12 @@ Partial Class triage
         Me.No.Name = "No"
         Me.No.Width = 82
         '
-        'Name
+        'PatientName
         '
-        Me.Name.HeaderText = "Patient Name"
-        Me.Name.MinimumWidth = 8
-        Me.Name.Name = "Name"
-        Me.Name.Width = 199
+        Me.PatientName.HeaderText = "Patient Name"
+        Me.PatientName.MinimumWidth = 8
+        Me.PatientName.Name = "PatientName"
+        Me.PatientName.Width = 199
         '
         'Severity
         '
@@ -226,17 +231,25 @@ Partial Class triage
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Patient List"
         '
-        'Panel2
+        'patient_panel
         '
-        Me.Panel2.Controls.Add(Me.TabControl2)
-        Me.Panel2.Controls.Add(Me.TabControl1)
-        Me.Panel2.Location = New System.Drawing.Point(454, 216)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1483, 964)
-        Me.Panel2.TabIndex = 1
+        Me.patient_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.patient_panel.AutoSize = True
+        Me.patient_panel.BackColor = System.Drawing.Color.Gray
+        Me.patient_panel.Controls.Add(Me.TabControl2)
+        Me.patient_panel.Controls.Add(Me.TabControl1)
+        Me.patient_panel.Location = New System.Drawing.Point(454, 216)
+        Me.patient_panel.Name = "patient_panel"
+        Me.patient_panel.Size = New System.Drawing.Size(1483, 964)
+        Me.patient_panel.TabIndex = 1
         '
         'TabControl2
         '
+        Me.TabControl2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabControl2.Appearance = System.Windows.Forms.TabAppearance.Buttons
         Me.TabControl2.Controls.Add(Me.TabPage3)
         Me.TabControl2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -269,6 +282,7 @@ Partial Class triage
         '
         'TextBox15
         '
+        Me.TextBox15.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox15.Location = New System.Drawing.Point(1262, 252)
         Me.TextBox15.Name = "TextBox15"
@@ -277,6 +291,7 @@ Partial Class triage
         '
         'Label13
         '
+        Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(1256, 300)
@@ -359,6 +374,8 @@ Partial Class triage
         '
         'TabControl1
         '
+        Me.TabControl1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons
         Me.TabControl1.Controls.Add(Me.tab_patient)
         Me.TabControl1.Controls.Add(Me.tab_symptoms)
@@ -836,21 +853,21 @@ Partial Class triage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'triage
+        'form_triage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1949, 1218)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "triage"
+        Me.Name = "form_triage"
         Me.Text = "Triage"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         CType(Me.triage_patientdgv, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
+        Me.patient_panel.ResumeLayout(False)
         Me.TabControl2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
@@ -872,7 +889,7 @@ Partial Class triage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents patient_panel As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents triage_patientdgv As DataGridView
@@ -887,9 +904,6 @@ Partial Class triage
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents No As DataGridViewTextBoxColumn
-    Friend WithEvents Name As DataGridViewTextBoxColumn
-    Friend WithEvents Severity As DataGridViewTextBoxColumn
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
@@ -936,4 +950,7 @@ Partial Class triage
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox15 As TextBox
     Friend WithEvents Label13 As Label
+    Friend WithEvents No As DataGridViewTextBoxColumn
+    Friend WithEvents PatientName As DataGridViewTextBoxColumn
+    Friend WithEvents Severity As DataGridViewTextBoxColumn
 End Class
